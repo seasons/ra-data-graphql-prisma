@@ -1,6 +1,6 @@
 {
-  "name": "ra-data-graphql-prisma",
-  "version": "0.0.10",
+  "name": "@seasons/ra-data-graphql-prisma",
+  "version": "0.0.11",
   "description": "A react-admin data provider for Prisma Server",
   "main": "dist/index.js",
   "sideEffects": false,
@@ -38,10 +38,11 @@
     "ra-data-graphql": "^2.3.0"
   },
   "peerDependencies": {
-    "graphql": "^0.13.2",
-    "react-admin": "^2.3.0"
+    "@seasons/react-admin": "^3.5.3",
+    "graphql": "^0.13.2"
   },
   "devDependencies": {
+    "@seasons/react-admin": "^3.5.3",
     "@types/jest": "^23.3.2",
     "@types/lodash": "^4.14.116",
     "@types/pluralize": "^0.0.29",
@@ -53,9 +54,12 @@
     "graphql": "^14.3.1",
     "jest": "^23.6.0",
     "react": "^16.8.6",
-    "react-admin": "^2.3.0",
     "react-dom": "^16.8.6",
     "rimraf": "^2.6.2",
     "typescript": "^3.0.3"
-  }
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "author": "Luc Succes"
 }
