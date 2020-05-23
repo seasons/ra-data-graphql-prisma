@@ -6,7 +6,7 @@ import {
   CREATE,
   UPDATE,
   DELETE
-} from 'react-admin';
+} from '@seasons/react-admin';
 import isObject from 'lodash/isObject';
 import isDate from 'lodash/isDate';
 

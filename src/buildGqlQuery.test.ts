@@ -13,7 +13,7 @@ import {
   UPDATE,
   CREATE,
   DELETE
-} from 'react-admin';
+} from '@seasons/react-admin';
 import buildGqlQuery, {
   buildApolloArgs,
   buildArgs,

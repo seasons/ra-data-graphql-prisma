@@ -13,7 +13,7 @@ import {
   GET_ONE,
   UPDATE,
   UPDATE_MANY
-} from 'react-admin';
+} from '@seasons/react-admin';
 
 import prismaBuildQuery from './buildQuery';
 import { Resource } from './constants/interfaces';
@@ -82,7 +82,7 @@ export default (options: {
           });
         }
         const res = await graphQLDataProvider(fetchType, resource, params);
-        return res
+        return res;
       };
     }
   );

@@ -1,5 +1,5 @@
 import { TypeKind, IntrospectionObjectType } from 'graphql';
-import { GET_LIST, GET_MANY, GET_MANY_REFERENCE } from 'react-admin';
+import { GET_LIST, GET_MANY, GET_MANY_REFERENCE } from '@seasons/react-admin';
 import getFinalType from './utils/getFinalType';
 import { IntrospectionResult, Resource } from './constants/interfaces';
 
@@ -47,9 +47,10 @@ const sanitizeResource = (
           ? data[field.name].id
           : undefined,
         [field.name]: linkedResourceData
-          ? sanitizeResource(introspectionResults, linkedResource)(
-            data[field.name]
-          )
+          ? sanitizeResource(
+              introspectionResults,
+              linkedResource
+            )(data[field.name])
           : undefined
       };
     }
